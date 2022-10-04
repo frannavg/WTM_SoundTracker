@@ -1,4 +1,23 @@
+*{
+  margin: 0px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
 
+h1, h2, h3, h4, h5, h6, p, span, label, button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+button {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover:after {
+  opacity: 1;
+}
 
 /* ANTIGO CONFIGURADO VITE
  :root {

@@ -1,0 +1,55 @@
+.containerQuery{
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 84%;
+    height: 190px;
+    left: 12%;
+    top: 389px;
+
+    border-radius: 114px;
+}
+
+.queryLabel{
+    width: 233px;
+    height: 92px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 92px;
+}
+
+.queryInput{
+    /* Input */
+    box-sizing: border-box;
+    font-size: 32px;
+    font-style: bold;
+    padding: 0 20px;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 252px;
+
+    width: 90%;
+    height: 75px;
+
+    background: #FFFFFF;
+    border: 3px solid #393939;
+    border-radius: 30px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
