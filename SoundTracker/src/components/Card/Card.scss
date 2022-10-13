@@ -1,0 +1,17 @@
+.containerCard{
+    margin: 15px 0;
+    padding: 10px;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #FFFFD2;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}

@@ -1,16 +1,21 @@
 import React from "react";
+import {Track} from "../QueryInput/QueryInput"
+import "./Card.scss"
 
-export function Card(props: {key: string; name: string; 
-        artist: string; album: string; children: React.ReactNode}){
+type Props = {
+    track: Track;
+}
+
+export function Card(props: Props){
+    const {track} = {...props}
     
-    console.log("LOG CARD", props.key, props.name, props.artist, props.album);
+    console.log("LOG CARD", track.name, track.artist, track.album, track.id);
     
     return (
         <div className="containerCard">
-            Card: {props.key} +
-                  {props.name} + 
-                  {props.artist} + 
-                  {props.album}
+            Name: {track?.name} <br/>
+            Artista: {track?.artist} <br/>
+            Album: {track?.album}
         </div>
     )
 }
