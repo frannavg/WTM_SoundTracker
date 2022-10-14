@@ -70,7 +70,7 @@ export function QueryInput(){
         <div className="containerQuery">
             <ToastContainer/>
             <label className="queryLabel">
-                Your Query
+                Your Lyrics
                 <div className="queryButtonWrapper" style={{display:"flex"}}>
                     <input 
                             className="queryInput"
