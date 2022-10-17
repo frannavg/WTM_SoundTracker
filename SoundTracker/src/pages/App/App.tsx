@@ -4,6 +4,7 @@ import { QueryInput } from '../../components/QueryInput/QueryInput'
 import { Footer } from '../../components/Footer/Footer'
 
 import './App.scss'
+import MusicImage from '../assets/music_notes.png'
 
 function App() {
 
