@@ -6,6 +6,7 @@ import { toast, ToastContainer, Zoom, Bounce } from "react-toastify";
 import { json } from "stream/consumers";
 import { Card } from "../Card/Card";
 
+
 export type Track = {
     id: number;
     name: string;
@@ -26,15 +27,12 @@ export function QueryInput(){
     /*Handle Functions*/
     function handleClick(event: any): void {
         event.preventDefault();
-        console.log("handleClick called", event, query)
         if (query.length === 0){
-            console.log("No query selected");
             toast.error("Please enter a track !");
             return;
         }
         else{
             API_QUERY = query;
-            console.log(API_QUERY);
             const API_LINK: string = `https://stproxynavarrete.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_lyrics=${API_QUERY}&s_track_rating=desc&apikey=${API_KEY}`;
             toast.success("Check your results below !");
             axios.get(`${API_LINK}`)
@@ -43,15 +41,16 @@ export function QueryInput(){
     }
 
     function handleChange(event: any): void {
-        event.preventDefault();
         setQuery(event.target.value);
-        console.log(query);
+    }
+
+    function handleKeyPress(event: any): void {
+        if (event.which === 13)
+            handleClick(event);
     }
 
     function respFill(q_response: []): void {
-        console.log("q_res:", q_response);
         let test = q_response.map(({track}: any) => {
-        console.log ("track", track)
             return {
                 id: track.track_id,
                 name: track.track_name,
@@ -59,12 +58,9 @@ export function QueryInput(){
                 artist: track.artist_name,
             }
         })
-        console.log("teste resp map", test)
         /* setContent(q_response); */
         setContent(test);
     }
-
-    console.log("content", content);
 
     return (
         <div className="containerQuery">
@@ -77,6 +73,7 @@ export function QueryInput(){
                             name="inputMusic"
                             type="text"
                             onChange={handleChange}
+                            onKeyPress={handleKeyPress}
                             value={query}
                             autoComplete="off"
                     />

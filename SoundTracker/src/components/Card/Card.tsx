@@ -8,9 +8,7 @@ type Props = {
 
 export function Card(props: Props){
     const {track} = {...props}
-    
-    console.log("LOG CARD", track.name, track.artist, track.album, track.id);
-    
+        
     return (
         <div className="containerCard">
             {track?.name.slice(0,50)} <br/>

@@ -7,7 +7,7 @@
     right: 10%;
     top: 64px;
 
-    background: linear-gradient(180deg, #DADBFF 30.96%, rgba(182, 202, 254, 0) 100%);
+    background: linear-gradient(180deg, #c6c8f7 30.96%, rgba(182, 202, 254, 0) 100%);
     mix-blend-mode: multiply;
     border: 5px solid #242222;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -16,7 +16,8 @@
 
 .logoName {
     left: 23%;
-    padding-top: 5%;
+    padding-top: 5.5%;
+    letter-spacing: 0.04em;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -24,7 +25,7 @@
     font-size: 92px;
     line-height: 132px;
 
-    color: #000000;
+    color: rgb(28, 39, 51);
 }
 
 /* Logo Image */
