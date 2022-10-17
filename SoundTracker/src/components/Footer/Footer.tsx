@@ -8,8 +8,8 @@ export function Footer(){
                 Francisco Navarrete <br/>
             </div>
             <div className="contLat">
-                <a href="github.com/frannavg" className="fa fa-github"></a> <br/>
-                <a href="instagram.com/navarrete.zip/" className="fa fa-instagram"></a>
+                <a href="https://www.github.com/frannavg" className="fa fa-github"></a> <br/>
+                <a href="https://www.instagram.com/navarrete.zip/" className="fa fa-instagram"></a>
             </div>
         </div>
     )
