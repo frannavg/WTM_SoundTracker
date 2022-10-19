@@ -2,7 +2,7 @@
     display: block;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding-top: 10px;
 
     position: absolute;
     width: 77%;
@@ -14,7 +14,6 @@
 }
 
 .queryLabel{
-    width: 233px;
     height: 92px;
 
     font-family: 'Lato';
@@ -47,7 +46,7 @@
 }
 
 .buttonInput{
-    margin: 0 30px 3%;
+    margin: 0 4% 30px;
 
     width: 100px;
     height: 60px;
@@ -56,7 +55,7 @@
     /* Button Text */
 
     font-family: 'Open Sans', sans-serif;
-    font-style: normal;
+    font-style: bold;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
@@ -71,4 +70,113 @@
 
 .queryButtonWrapper{
     justify-content: space-around;
+}
+
+@media (max-width: 850px){
+    .containerQuery{
+        top: 345px;
+    }
+    .queryLabel{
+        font-size: 36px;
+    }
+    .queryInput{
+        font-size: 24px;
+        height: 55px;
+    }
+    .buttonInput{
+        font-size: 16px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 715px){
+    .containerQuery{
+        top: 315px;
+    }
+    .queryLabel{
+        font-size: 32px;
+        line-height: 72px;
+        left: 0%;
+    }
+    .queryInput{
+        font-size: 22px;
+        height: 45px;
+    }
+    .queryButtonWrapper{
+        left:2%;
+        right: 2%;
+    }
+    .buttonInput{
+        font-size: 14px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 540px){
+    .containerQuery{
+        top: 275px;
+    }
+    .queryLabel{
+        font-size: 26px;
+        line-height: 52px;
+    }
+    .queryInput{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 490px){
+    .containerQuery{
+        top: 260px;
+    }
+    .queryLabel{
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .queryInput{
+        font-size: 17px;
+        height: 40px;
+    }
+    .buttonInput{
+        height: 40px;
+    }
+}
+
+@media (max-width: 440px){
+    .containerQuery{
+        top: 245px;
+    }
+
+    .queryLabel{
+        font-size: 22px;
+        line-height: 42px;
+    }
+    .queryInput{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px){
+    .containerQuery{
+        top: 230px;
+    }
+    .queryInput{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px){
+    .containerQuery{
+        top: 210px;
+    }
+
+    .queryInput{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 354px){
+    .containerQuery{
+        top: 190px;
+    }
 }

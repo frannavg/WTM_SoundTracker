@@ -11,9 +11,9 @@ export function Card(props: Props){
         
     return (
         <div className="containerCard">
-            {track?.name.slice(0,50)} <br/>
-            {track?.artist.slice(0,50)} <br/>
-            {track?.album.slice(0, 50)}
+            {track?.name.slice(0,40)} <br/>
+            {track?.artist.slice(0,40)} <br/>
+            {track?.album.slice(0,40)}
         </div>
     )
 }
